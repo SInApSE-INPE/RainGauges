@@ -1,0 +1,64 @@
+{
+    "id": null,
+    "name": "samet_daily",
+    "title": "SAMeT - Daily South American Mapping of Temperature",
+    "description": "South American Mapping of Temperature",
+    "temporal_composition_schema": null,
+    "composition_function": null,
+    "grid_ref_sys": "EPSG:4326",
+    "collection_type": "collection",
+    "metadata": {
+        "providers": [
+            {
+                "url": "https://ftp.cptec.inpe.br/modelos/tempo/SAMeT/DAILY",
+                "name": "Centro de Previs\u00e3o de Tempo e Estudos Clim\u00e1ticos (CPTEC)",
+                "roles": [
+                    "host",
+                    "producer",
+                    "processor",
+                    "licensor"
+                ]
+            }
+        ],
+        "license": {
+            "type": "Creative Commons Attribution 4.0 International",
+            "uri": "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    "keywords": [
+        "temperature",
+        "daily",
+        "south america"
+    ],
+    "is_public": true,
+    "is_available": true,
+    "category": "climate",
+    "version": 1,
+    "version_predecessor": null,
+    "version_successor": null,
+    "bands": [
+        {
+            "name": null,
+            "common_name": null,
+            "description": null,
+            "min_value": null,
+            "max_value": null,
+            "nodata": null,
+            "scale": null,
+            "data_type": null,
+            "mime_type": null,
+            "resolution_x": null,
+            "resolution_y": null,
+            "resolution_unit": null,
+            "center_wavelength": null,
+            "full_width_half_max": null
+        }
+    ],
+    "properties": {
+        "sources": [
+            "https://ftp.cptec.inpe.br/modelos/tempo/SAMeT/Rozante_et_al_2021.pdf",
+            "https://ftp.cptec.inpe.br/modelos/tempo/SAMeT/DAILY",
+            "https://ftp.cptec.inpe.br/modelos/tempo/SAMeT/CLIMATOLOGY/"
+        ]
+    }
+}
