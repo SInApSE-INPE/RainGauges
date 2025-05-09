@@ -14,7 +14,7 @@ yys = args.yys
 yye = args.yye
 num_workers = args.w
 
-dir_out = "./output"
+dir_out = "/home/arturo/Downloads/UCAR"
 
 # Región de Sudamérica
 lat_min, lat_max, lon_min, lon_max = -50, 13, -85, -45
