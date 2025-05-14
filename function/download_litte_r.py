@@ -46,7 +46,9 @@ data_sizes = [13,7,13,7,13,7,13,7,13,7,13,7,13,7,13,7,13,7,13,7]
 def download_file(url):
     response = requests.head(url)
     if response.status_code == 200:
-        response = requests.get(url, stream=True)
+        # response = requests.get(url, stream=True) # Original
+        # response = requests.head(url, verify=False)
+        response = requests.get(url, verify=False)
         total_size = int(response.headers.get('content-length', 0))
         progress_bar = tqdm(total=total_size, unit='B', unit_scale=True, unit_divisor=1024)
         file_in_memory = BytesIO()

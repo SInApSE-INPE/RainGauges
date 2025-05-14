@@ -4,6 +4,9 @@ import subprocess
 import pandas as pd
 import concurrent.futures
 
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 parser = argparse.ArgumentParser()
 parser.add_argument("-yys", type=int, required=True)
 parser.add_argument("-yye", type=int, required=True)
@@ -14,10 +17,10 @@ yys = args.yys
 yye = args.yye
 num_workers = args.w
 
-dir_out = "/home/arturo/Downloads/UCAR"
+dir_out = f"/home/arturo/Downloads/UCAR/{yys}"
 
 # Región de Sudamérica
-lat_min, lat_max, lon_min, lon_max = -50, 13, -85, -45
+lat_min, lat_max, lon_min, lon_max = -55, 6, -83, -33
 
 # Lista de fechas diarias a las 12:00
 dates_list = pd.date_range(
