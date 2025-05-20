@@ -26,7 +26,7 @@ lat_min, lat_max, lon_min, lon_max = -55, 6, -83, -33
 dates_list = pd.date_range(
     start=f"{yys}-01-01 12:00:00",
     end=f"{yye}-12-31 12:00:00",
-    freq="D"
+    freq="6h"
 ).strftime("%Y-%m-%d %H:%M:%S").tolist()
 
 def download_litte_r_for_date(date_str):
